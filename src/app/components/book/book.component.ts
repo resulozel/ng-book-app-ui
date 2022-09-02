@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {BookModel} from "./book.model";
 import {MockData} from "./mock.data";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-book',
@@ -14,7 +15,7 @@ export class BookComponent implements OnInit {
 
 
 
-  constructor() {
+  constructor(private  route : Router) {
   }
 
   ngOnInit(): void {
@@ -24,4 +25,7 @@ export class BookComponent implements OnInit {
     })
   }
 
+  addComment() {
+    this.route.navigate(['comments']);
+  }
 }

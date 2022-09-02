@@ -7,12 +7,14 @@ import {RouterModule} from "@angular/router";
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {AppRoutingModule} from "./app-routing.module";
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BookComponent,
     CommentsComponent,
+    NavbarComponent,
   ],
     imports: [
         BrowserModule,
