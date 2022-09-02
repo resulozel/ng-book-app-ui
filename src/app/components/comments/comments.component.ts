@@ -6,12 +6,12 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./comments.component.css']
 })
 export class CommentsComponent implements OnInit {
-  responseData: any[] = [];
 
   constructor() {
   }
 
   ngOnInit(): void {
+
   }
 
 }

@@ -10,7 +10,7 @@ import {MockData} from "./mock.data";
 export class BookComponent implements OnInit {
 
   dataMock = MockData;
-  @Input()  datas: BookModel[] = [];
+  @Input() datas: BookModel[] = [];
 
 
 
@@ -20,6 +20,7 @@ export class BookComponent implements OnInit {
   ngOnInit(): void {
     this.dataMock.forEach((response: any) => {
       this.datas = [...this.datas, response];
+
     })
   }
 
