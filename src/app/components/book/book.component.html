@@ -1,0 +1,53 @@
+<div class="container-fluid mt-4">
+  <h4 class="text-center"> CARD </h4>
+
+  <div class="row p-lg-4 font-style" *ngFor="let data of datas ">
+
+    <div class=" col-lg-6 col-md-6  col-sm-6  col-xs-12  ">
+      <div class="card border-dark shadow-lg" >
+        <div class="card-content">
+          <div class="card-body ">
+            <div class="row">
+                <div class="col-9">
+                  id : <span>{{data.id}}</span> <br>
+                  name: <span>{{data.name}}</span> <br>
+                  author : <span>{{data.author}}</span> <br>
+                  description : <span>{{data.description}}</span> <br>
+                </div>
+                <div class="col-3 ">
+                  <img class="image-url" [src]="data.imageUrl"  alt="hobbit">
+                </div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class=" col-lg-6 col-md-6  col-sm-6  col-xs-12  ">
+      <div class="card border-dark shadow-lg" >
+        <div class="card-content">
+          <div class="card-body ">
+            <div class="row">
+              <div class="col-9">
+                id : <span>{{data.id}}</span> <br>
+                name: <span>{{data.name}}</span> <br>
+                author : <span>{{data.author}}</span> <br>
+                description : <span>{{data.description}}</span> <br>
+              </div>
+              <div class="col-3 ">
+                <img [src]="data.imageUrl" alt="hobbit" class="image-url">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+

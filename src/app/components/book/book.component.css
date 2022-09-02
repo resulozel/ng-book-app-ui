@@ -1,0 +1,8 @@
+.font-style{
+  font-family: 'Oswald', sans-serif;
+}
+.image-url{
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
