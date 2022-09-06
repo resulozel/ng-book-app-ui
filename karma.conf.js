@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/angular-input-output-decorator'),
+      dir: require('path').join(__dirname, './coverage/book-app-ui'),
       subdir: '.',
       reporters: [
         { type: 'html' },
