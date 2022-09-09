@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {BookModel} from "./book.model";
+import {BookModel} from "../../core/models/book-model/book.model";
 import {MockData} from "./mock.data";
 import {Router} from "@angular/router";
 
