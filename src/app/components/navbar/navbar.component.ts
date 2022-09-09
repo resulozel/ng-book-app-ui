@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MockData} from "../book/mock.data";
+import {MockData} from "../../pages/book/mock.data";
 
 @Component({
   selector: 'app-navbar',
