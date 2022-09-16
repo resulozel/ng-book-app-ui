@@ -10,15 +10,25 @@ import {Router} from "@angular/router";
 })
 export class BookComponent implements OnInit {
 
+
+
   dataMock = MockData;
   @Input() datas: BookModel[] = [];
+  isHidden = true;
+  limit = 0;
+  dataLength = 0;
+  size = 6;
+
 
 
 
   constructor(private  route : Router) {
+
   }
 
   ngOnInit(): void {
+    this.dataLength = this.dataMock.length;
+    console.log(this.dataLength)
     this.dataMock.forEach((response: any) => {
       this.datas = [...this.datas, response];
 
@@ -27,5 +37,11 @@ export class BookComponent implements OnInit {
 
   addComment() {
     this.route.navigate(['comments']);
+  }
+
+  viewMore(num : number) {
+    this.size= this.size + num;
+
+
   }
 }

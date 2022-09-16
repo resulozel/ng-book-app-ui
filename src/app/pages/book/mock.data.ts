@@ -28,5 +28,45 @@ export const MockData = [
     description : 'Crime and Punishment follows the mental anguish and moral dilemmas of Rodion Raskolnikov, an impoverished ex-student in Saint Petersburg who plans to kill an unscrupulous pawnbroker, an old woman who stores money and valuable objects in her flat.' ,
     imageUrl :'../.././assets/images/crime_and_punishment.png',
 
-  }
+  },
+  {
+    id: 5,
+    name: 'Crime and Punishment',
+    author: 'Fyodor Mihayloviç Dostoyevski',
+    description : 'Crime and Punishment follows the mental anguish and moral dilemmas of Rodion Raskolnikov, an impoverished ex-student in Saint Petersburg who plans to kill an unscrupulous pawnbroker, an old woman who stores money and valuable objects in her flat.' ,
+    imageUrl :'../.././assets/images/crime_and_punishment.png',
+
+  },  {
+    id: 6,
+    name: 'Crime and Punishment',
+    author: 'Fyodor Mihayloviç Dostoyevski',
+    description : 'Crime and Punishment follows the mental anguish and moral dilemmas of Rodion Raskolnikov, an impoverished ex-student in Saint Petersburg who plans to kill an unscrupulous pawnbroker, an old woman who stores money and valuable objects in her flat.' ,
+    imageUrl :'../.././assets/images/crime_and_punishment.png',
+
+  },
+  {
+    id: 7,
+    name: 'Crime and Punishment',
+    author: 'Fyodor Mihayloviç Dostoyevski',
+    description : 'Crime and Punishment follows the mental anguish and moral dilemmas of Rodion Raskolnikov, an impoverished ex-student in Saint Petersburg who plans to kill an unscrupulous pawnbroker, an old woman who stores money and valuable objects in her flat.' ,
+    imageUrl :'../.././assets/images/crime_and_punishment.png',
+
+  },
+  {
+    id: 8,
+    name: 'Crime and Punishment',
+    author: 'Fyodor Mihayloviç Dostoyevski',
+    description : 'Crime and Punishment follows the mental anguish and moral dilemmas of Rodion Raskolnikov, an impoverished ex-student in Saint Petersburg who plans to kill an unscrupulous pawnbroker, an old woman who stores money and valuable objects in her flat.' ,
+    imageUrl :'../.././assets/images/crime_and_punishment.png',
+
+  },
+  {
+    id: 9,
+    name: 'Crime and Punishment',
+    author: 'Fyodor Mihayloviç Dostoyevski',
+    description : 'Crime and Punishment follows the mental anguish and moral dilemmas of Rodion Raskolnikov, an impoverished ex-student in Saint Petersburg who plans to kill an unscrupulous pawnbroker, an old woman who stores money and valuable objects in her flat.' ,
+    imageUrl :'../.././assets/images/crime_and_punishment.png',
+
+  },
+
 ];
