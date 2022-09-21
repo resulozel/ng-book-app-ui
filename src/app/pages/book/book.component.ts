@@ -2,6 +2,8 @@ import {Component, Input, OnInit} from '@angular/core';
 import {BookModel} from "../../core/models/book-model/book.model";
 import {MockData} from "./mock.data";
 import {Router} from "@angular/router";
+import {BookService} from "../../core/services/book.service";
+
 
 @Component({
   selector: 'app-book',
@@ -11,7 +13,7 @@ import {Router} from "@angular/router";
 export class BookComponent implements OnInit {
 
 
-
+  //books: BookModel[]=[];
   dataMock = MockData;
   @Input() datas: BookModel[] = [];
   isHidden = true;
@@ -22,11 +24,23 @@ export class BookComponent implements OnInit {
 
 
 
-  constructor(private  route : Router) {
+  constructor(private  route : Router ,
+              private bookService :BookService) {
+
+  }
+
+
+  getBook(): void {
+    this.bookService.getBook()
+      .subscribe(x=>{
+        console.log(x)
+        }
+      )
 
   }
 
   ngOnInit(): void {
+    this.getBook();
     this.dataLength = this.dataMock.length;
     console.log(this.dataLength)
     this.dataMock.forEach((response: any) => {
@@ -40,7 +54,7 @@ export class BookComponent implements OnInit {
   }
 
   viewMore(num : number) {
-    this.size= this.size + num;
+    this.size= this.size * num;
 
 
   }
