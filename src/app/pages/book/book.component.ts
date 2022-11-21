@@ -21,9 +21,6 @@ export class BookComponent implements OnInit {
   dataLength = 0;
   size = 6;
 
-
-
-
   constructor(private  route : Router ,
               private bookService :BookService) {
 

@@ -23,7 +23,8 @@ import { ShowcaseComponent } from './pages/showcase/showcase.component';
         RouterModule ,
       FormsModule ,
       HttpClientModule,
-      AppRoutingModule
+      AppRoutingModule,
+
     ],
   providers: [],
   bootstrap: [AppComponent]
